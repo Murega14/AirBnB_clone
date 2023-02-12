@@ -27,7 +27,7 @@ class TestPlace(unittest.TestCase):
         if os.path.isfile(FileStorage._FileStorage_file_path):
             os.remove(FileStorage._FileStorage__file_path)
 
-      def test_8_instantiation(self):
+    def test_8_instantiation(self):
         """Tests instantiation of Place class."""
 
         b = Place()
