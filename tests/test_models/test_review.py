@@ -10,7 +10,7 @@ import json
 from models.engine.file_storage import FileStorage
 import os
 from models import storage
-from models.base_models import BaseModel
+from models.base_model import BaseModel
 
 
 class TestReview(unittest.TestCase):
@@ -44,9 +44,9 @@ class TestReview(unittest.TestCase):
         """Tests the attributes of Review class."""
         attributes = storage.attributes()["Review"]
         o = Review()
-        for key, value in attributes.items():
-            self.assertTrue(hasattr(o, key))
-            self.assertEqual(type(getattr(o, key, None)), value)
+        for k, v in attributes.items():
+            self.assertTrue(hasattr(o, k))
+            self.assertEqual(type(getattr(o, k, None)), v)
 
 
 if __name__ == "__main__":
