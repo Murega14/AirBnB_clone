@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-"""the class place inherits from BaseModel"""
-from base_model import BaseModel
+"""This module creates a Place class"""
+
+from models.base_model import BaseModel
+
 
 class Place(BaseModel):
-    """initializing the place class"""
+    """Class for managing place objects"""
+
     city_id = ""
     user_id = ""
     name = ""
@@ -14,4 +17,4 @@ class Place(BaseModel):
     price_by_night = 0
     latitude = 0.0
     longitude = 0.0
-    amenity_ids = ""
+    amenity_ids = []
