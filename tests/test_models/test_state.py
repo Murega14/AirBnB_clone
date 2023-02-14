@@ -10,7 +10,7 @@ import json
 from models.engine.file_storage import FileStorage
 import os
 from models import storage
-from models.base_models import BaseModel
+from models.base_model import BaseModel
 
 
 class TestState(unittest.TestCase):
@@ -44,9 +44,9 @@ class TestState(unittest.TestCase):
         """Tests the attributes of State class."""
         attributes = storage.attributes()["State"]
         o = State()
-        for key, value in attributes.items():
-            self.assertTrue(hasattr(o, key))
-            self.assertEqual(type(getattr(o, key, None)), value)
+        for k, v in attributes.items():
+            self.assertTrue(hasattr(o, k))
+            self.assertEqual(type(getattr(o, k, None)), v)
 
 
 if __name__ == "__main__":
