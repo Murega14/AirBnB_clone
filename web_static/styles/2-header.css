@@ -1,8 +1,5 @@
-footer {
-    background-color: green;
-    height: 60px;
+header {
+    background-color: red;
+    height: 70px;
     width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
 }
